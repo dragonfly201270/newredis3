@@ -38,7 +38,7 @@ namespace WebApplication10
             services.AddDistributedRedisCache(option =>
             {
                 //option.Configuration = Configuration.GetConnectionString("redis");
-                option.InstanceName = "sample";
+                option.InstanceName = "master";
                 option.Configuration = Configuration.GetConnectionString("redis");
             }
                 );
